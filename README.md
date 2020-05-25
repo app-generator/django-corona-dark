@@ -1,8 +1,8 @@
-# [Boierplate Code Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard)
+# [Django Dashboard Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark)
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Django](https://www.djangoproject.com/) - Features
+> **Open-Source Admin Dashboard** coded in **Django Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
-- Sample UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+- Sample UI Kit: **Corona Dark Dashboard** (Free Version) provided by **Bootstrapdash**
 - UI-Ready app, SQLite Database, Django Native ORM
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
@@ -13,15 +13,14 @@
 
 > Links
 
-- [Boierplate Code Django Dashboard](https://boilerplate-code-django-dashboard.appseed.us/) - LIVE Demo
-- [Boierplate Code Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Official product page
-- [Boierplate Code Django Dashboard](https://docs.appseed.us/boilerplate-code/django-dashboard) - Starter docs
+- [Django Dashboard Corona Dark](https://django-dashboard-corona-dark.appseed.us/) - LIVE Demo
+- [Django Dashboard Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - Official product page
 - More [Django Admin Dashboards](https://appseed.us/admin-dashboards/django) - index hosted by **[AppSeed](https://appseed.us)**
 - [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
 
 <br />
 
-![Boierplate Code Django Dashboard - Open-Source template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-django-dashboard/master/media/boilerplate-code-django-dashboard-screen.png)
+![Django Dashboard Corona Dark - Open-Source template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/django-dashboard-corona-dark/master/media/django-dashboard-corona-dark-screen.png)
 
 <br />
 
@@ -29,8 +28,8 @@
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
-$ cd boilerplate-code-django-dashboard
+$ git clone https://github.com/app-generator/django-dashboard-corona-dark.git
+$ cd django-dashboard-corona-dark
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -138,8 +137,8 @@ The application can be easily executed in a docker container. The steps:
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
-$ cd boilerplate-code-django-dashboard
+$ git clone https://github.com/app-generator/django-dashboard-corona-dark.git
+$ cd django-dashboard-corona-dark
 ```
 
 > Start the app in Docker
@@ -204,4 +203,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Boierplate Code Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Django Dashboard Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).

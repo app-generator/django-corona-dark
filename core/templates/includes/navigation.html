@@ -1,75 +1,197 @@
-
-    <nav class="pcoded-navbar">
-        <div class="navbar-wrapper">
-            <div class="navbar-brand header-logo">
-                <a target="_blank" href="https://appseed.us/boilerplate-code/django-dashboard" class="b-brand">
-                    <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+              <a class="navbar-brand brand-logo-mini" href="/"><img src="/static/assets/images/logo-mini.svg" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+              <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu"></span>
+              </button>
+              <ul class="navbar-nav w-100">
+                <li class="nav-item w-100">
+                  <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                    <input type="text" class="form-control" placeholder="Search products">
+                  </form>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item dropdown d-none d-lg-block">
+                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                    <h6 class="p-3 mb-0">Projects</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-file-outline text-primary"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-web text-info"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">UI Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-layers text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all projects</p>
+                  </div>
+                </li>
+                <li class="nav-item nav-settings d-none d-lg-block">
+                  <a class="nav-link" href="#">
+                    <i class="mdi mdi-view-grid"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <i class="mdi mdi-email"></i>
+                    <span class="count bg-success"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                    <h6 class="p-3 mb-0">Messages</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="/static/assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                        <p class="text-muted mb-0"> 1 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="/static/assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                        <p class="text-muted mb-0"> 15 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="/static/assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                        <p class="text-muted mb-0"> 18 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">4 new messages</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-bell"></i>
+                    <span class="count bg-danger"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                    <h6 class="p-3 mb-0">Notifications</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-calendar text-success"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Event today</p>
+                        <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-settings text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Settings</p>
+                        <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-link-variant text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Launch Admin</p>
+                        <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all notifications</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                    <div class="navbar-profile">
+                      <img class="img-xs rounded-circle" src="/static/assets/images/faces/face15.jpg" alt="">
+                      <p class="mb-0 d-none d-sm-block navbar-profile-name">
+                        {{ request.user.username }}    
+                      </p>
+                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                     </div>
-                    <span class="b-title">Django Boilerplate</span>
-                </a>
-                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                    <h6 class="p-3 mb-0">Profile</h6>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-settings text-success"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Settings</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="{% url 'logout' %}" class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-logout text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Log out</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">Advanced settings</p>
+                  </div>
+                </li>
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <span class="mdi mdi-format-line-spacing"></span>
+              </button>
             </div>
-            <div class="navbar-content scroll-div">
-                <ul class="nav pcoded-inner-navbar">
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Navigation</label>
-                    </li>
-                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item active">
-                        <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>UI Element</label>
-                    </li>
-                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/ui-button.html" class="">Button</a></li>
-                            <li class=""><a href="/ui-badges.html" class="">Badges</a></li>
-                            <li class=""><a href="/ui-breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
-                            <li class=""><a href="/ui-collapse.html" class="">Collapse</a></li>
-                            <li class=""><a href="/ui-tabs.html" class="">Tabs & pills</a></li>
-                            <li class=""><a href="/ui-typography.html" class="">Typography</a></li>
-
-
-                            <li class=""><a href="/ui-icons.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Forms & table</label>
-                    </li>
-                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a href="/ui-forms.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form elements</span></a>
-                    </li>
-                    <li data-username="Table bootstrap datatable footable" class="nav-item">
-                        <a href="/ui-tables.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li data-username="Charts Morris" class="nav-item"><a href="/charts-morris.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a></li>
-                    <li data-username="Maps Google" class="nav-item"><a href="/maps-google.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a></li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/auth-reset-pass.html" class="">Reset Pass</a></li>
-                            <li class=""><a href={% url 'register' %} class="">Register</a></li>
-                        </ul>
-                    </li>
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-blank.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
-
-                    <li data-username="Disabled Menu" class="nav-item">
-                        <a href={% url 'logout' %} class="nav-link">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-power"></i>
-                            </span>
-                            <span class="pcoded-mtext">Logout - [ {{ request.user.username }} ]</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+          </nav>
+  
+  
