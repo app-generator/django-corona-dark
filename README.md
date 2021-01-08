@@ -19,7 +19,7 @@ Corona Dark Free admin template has beautiful typography, crisp design, and neat
 > Links
 
 - [Django Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - Product page
-- [Django Corona Dark Demo](django-corona-dark.appseed-srv1.com) - LIVE Deployment
+- [Django Corona Dark Demo](https://django-corona-dark.appseed-srv1.com) - LIVE Deployment
 
 <br />
 
