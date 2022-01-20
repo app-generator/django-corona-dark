@@ -6,24 +6,23 @@ Open-source **[Django Dashboard](https://appseed.us/admin-dashboards/django)** g
 
 > Features
 
-- Up-to-date [dependencies](./requirements.txt): **Django 3.2.6 LTS**
+- `Up-to-date dependencies`
 - [SCSS compilation](#recompile-css) via **Gulp**
-- UI-Ready app, SQLite Database, Django Native ORM
-- Modular design, clean code-base
-- Session-Based Authentication, Forms validation
-- Deployment scripts: Docker, Gunicorn / Nginx
-- Support via **Github** and [Discord](https://discord.gg/fZC6hup).
+- UI-Ready app, `SQLite Database`, Django Native ORM
+- `Session-Based authentication`, Forms validation
+- `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
+- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
 > Links
 
-- [Django Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - product page
-- [Django Corona Dark](https://django-corona-dark.appseed-srv1.com) - LIVE Deployment
+- 👉 [Django Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - product page
+- 👉 [Django Corona Dark](https://django-corona-dark.appseed-srv1.com) - LIVE Deployment
 
 <br />
 
-## Quick Start in [Docker](https://www.docker.com/)
+## ✨ Quick Start in `Docker`
 
 > Get the code
 
@@ -35,9 +34,7 @@ $ cd django-corona-dark
 > Start the app in Docker
 
 ```bash
-$ docker-compose pull   # download dependencies 
-$ docker-compose build  # local set up
-$ docker-compose up -d  # start the app 
+$ docker-compose up --build
 ```
 
 Visit `http://localhost:85` in your browser. The app should be up & running.
@@ -83,9 +80,9 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 
 <br />
 
-## Code-base structure
+## ✨ Code-base structure
 
-The project is coded using a simple and intuitive structure presented bellow:
+The project comes with a simple and intuitive structure presented below:
 
 ```bash
 < PROJECT ROOT >
@@ -148,7 +145,7 @@ The project is coded using a simple and intuitive structure presented bellow:
 
 <br />
 
-## Recompile CSS
+## ✨ Recompile CSS
 
 To recompile SCSS files, follow this setup:
 
@@ -191,7 +188,7 @@ The generated file is saved in `static/assets/css` directory.
 
 <br /> 
 
-## Deployment
+## ✨ Deployment
 
 The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
 
