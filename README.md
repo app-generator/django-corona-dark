@@ -11,7 +11,7 @@ Open-source **[Django Dashboard](https://appseed.us/admin-dashboards/django)** g
 - UI-Ready app, `SQLite Database`, Django Native ORM
 - `Session-Based authentication`, Forms validation
 - `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
-- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+- Free [Support](https://appseed.us/support) via **Github** (issues tracker), Email and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
@@ -45,7 +45,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-## How to use it
+## ✨ How to use it
 
 ```bash
 $ # Get the code
