@@ -41,10 +41,6 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Django Dashboard Corona Dark - Open-Source template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/django-dashboard-corona-dark/master/media/django-dashboard-corona-dark-screen.png)
-
-<br />
-
 ## ✨ How to use it
 
 ```bash
